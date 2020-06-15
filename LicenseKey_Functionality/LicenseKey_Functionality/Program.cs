@@ -8,6 +8,7 @@ namespace LicenseKey_Functionality
 {
 	static class Program
 	{
+		public static MainForm mainForm; 
 		/// <summary>
 		/// The main entry point for the application.
 		/// </summary>
@@ -16,6 +17,8 @@ namespace LicenseKey_Functionality
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
+			//mainForm = new MainForm();
+			//Application.Run(mainForm);
 			Application.Run(new MainForm());
 		}
 	}
